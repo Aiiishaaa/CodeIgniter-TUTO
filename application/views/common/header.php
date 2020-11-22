@@ -34,6 +34,8 @@
           </button>
           <a class="navbar-brand" href="site/index.html">Aicha HAMIDA</a>
         </div>
+
+        
         <div class="collapse navbar-collapse" id="main_nav">
 				<ul class="nav navbar-nav">
 					<li><?= anchor('index', "Accueil"); ?></li>
