@@ -47,18 +47,21 @@
 						<li><?= anchor('blog', "Blog"); ?></li>
 					<?php endif; ?>
 					<li><?= anchor('contact', "Contact"); ?></li>
-				</ul>
+        </ul>
+        
 				<ul class="nav navbar-nav navbar-right">
 					<?php if ($this->auth_user->is_connected) : ?>
 						<li><?= anchor('deconnexion', "Déconnexion"); ?></li>
 					<?php else : ?>
 						<li><?= anchor('connexion', "Connexion"); ?></li>
 					<?php endif; ?>
-				</ul>
+        </ul>
+        
 				<?php if ($this->auth_user->is_connected) : ?>
 					<p class="navbar-text navbar-right">|</p>
 					<p class="navbar-text navbar-right">Bienvenue <strong><?= $this->auth_user->username; ?></strong></p>
-				<?php endif; ?>
+        <?php endif; ?>
+        
 			</div>
 		</div>
 	</nav>
